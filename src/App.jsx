@@ -12,7 +12,7 @@ function App() {
 
   return (<>
     <div className='container-fluid'>
-    <Router>
+    <Router basename="/portfolio">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
