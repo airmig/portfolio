@@ -11,7 +11,7 @@ export default function Hero() {
     return  <div className="bghero">
             <div className="row">
                 <div className="col-lg-12 imgcontainer text-left">
-                    <img className="frontimg" src="prot.webp"/>
+                    <img className="frontimg" src="./prot.webp"/>
                 </div>
             </div>
             <div className="row">

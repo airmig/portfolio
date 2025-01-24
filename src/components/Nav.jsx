@@ -29,9 +29,9 @@ export default function Nav() {
             <NavLink className="nav-link" to="/about">{t('aboutme')}</NavLink>
           </li> */}
           <li><a onClick={()=>changeLanguage('en')} className="nav-link">
-            <img className="flag" src="us.svg" alt={t('english')}/></a></li>
+            <img className="flag" src="./us.svg" alt={t('english')}/></a></li>
           <li><a onClick={()=>changeLanguage('es')} className="nav-link">
-            <img className="flag" src="cr.svg" alt={t('spanish')}/></a></li>
+            <img className="flag" src="./cr.svg" alt={t('spanish')}/></a></li>
         </ul>
       </div>
     </div>
