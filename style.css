@@ -1,0 +1,482 @@
+* {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -0.5px;
+  }
+
+:root {
+    --bgcolor: #2c7fe4;
+    --fntcolor: white;
+    --active: white;
+    --linkcolor: rgb(221, 221, 221);
+}
+
+
+nav {
+    background-color: var(--bgcolor);
+    color: var(--fntcolor);
+}
+
+.nav-link {
+    color: var(--linkcolor);
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    color: var(--active);
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--active);
+    font-size: 1.3rem;
+}
+
+.company-name{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.bghero {
+    background-image: url('bg4.png');
+    background-size: cover;  /* Ensures the image covers the entire div */
+    background-position: center;  /* Centers the image in the div */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+.frontimg {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    padding-left: 100px;
+    margin-top: 30px;
+}
+
+.headerimg {
+    height: 90px;
+    object-fit: cover;
+}
+
+.biocontainer {
+    font-size: 3.8rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    word-break: break-word;
+    line-height: 65px;
+    margin-top: 30px;
+}
+
+.header-a {
+    font-size: 3.8rem;
+}
+
+.header-b {
+    font-size: 2rem;
+}
+
+.button-text {
+    font-size: 1rem;
+}
+
+.home-b {
+    font-size: 1.8rem;
+    line-height: 35px;
+    font-weight: 200;
+ }
+
+
+.social {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color:rgb(34, 38, 47);
+    background-color: white;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.social:hover {
+    filter: invert(1);
+}
+
+.social-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.projects {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.project-item {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-description h1 {
+    font-size: 30px;
+}
+
+.project-description > span {
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.col-6 {
+flex: 0 0 50%;
+}
+
+@media (max-width: 400px) {
+    .col-6 {
+        flex: 0 0 100%; /* Change to full width on small screens */
+    }
+}
+
+@media (max-width: 1000px) {
+    .biocontainer {
+        font-size: 2rem;
+        padding-left: 100px;
+        padding-right: 100px;
+        word-break: break-word;
+        line-height: 40px;
+    }
+    .home-b {
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 200;
+     }
+     .title {
+        font-size: 0.8rem;
+     }
+     .subtitle {
+        font-size: 0.7rem;
+     }
+     .header-a {
+        font-size: 2rem;
+    }
+    .header-b {
+        font-size: 1.3rem;
+    }
+    
+    .button-text {
+        font-size: 1rem;
+    }
+    .footer-normal {
+        display: none;
+    }
+    .social {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+}
+
+.flexprojects {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 5px;
+}
+
+
+.item {
+    flex-grow: 1;
+    height: 300px;
+    background-color: darkred;
+    position: relative;
+    border: 1px solid lighten(black, 10);
+    transition: all 300ms ease-in-out;
+    background-size: cover;  /* Ensures the image covers the entire div */
+    background-position: center;  /* Centers the image in the div */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    height: 300px;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for effect */
+
+    &:hover {
+      flex-grow: 9;
+      background-color: white;
+    }
+    
+    &:before {
+      content: attr(data-order);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+}
+
+.beulah {
+    background-image: url('./beulah.png');
+}
+
+.winticket {
+    background-image: url('./winticket.png');
+}
+
+.cms {
+    background-image: url('./cms.png');     
+}
+
+.reporting {
+    background-image: url('./reporting.png');
+}
+
+.networking {
+    background-image: url('./networking.png');
+}
+
+.nhcqualify {
+    background-image: url('./nhcqualify.png');
+}
+
+.betpad {
+    background-image: url('./betpad.jpg');
+}
+
+.xlpharmacy {
+    background-image: url('./xlpharmacy.png');
+}
+
+.whchamp {
+    background-image: url('./whchamp.png');
+}
+
+.tqha {
+    background-image: url('./tqha.png');
+}
+
+.kairos {
+    background-image: url('./kairos.png');
+}
+
+.ebet {
+    background-image: url('./ebet.png');
+}
+
+.bat {
+    background-image: url('./bataviabets.png');
+}
+
+.finger {
+    background-image: url('./fingerlakes.png');
+}
+
+.sgr {
+    background-image: url('./saratoga.png');
+}
+
+.hp {
+    background-image: url('./horseplayers.png');
+}
+
+.darkhorse {
+    background-image: url('./darkhorse.png');
+}
+
+.wlr {
+    background-image: url('./wlr.png');
+}
+
+.yonkers {
+    background-image: url('./yonkers.png');
+}
+
+.ghc {
+    background-image: url('./ghc.png');
+}
+
+.raceuwin {
+    background-image: url('./raceuwin.png');
+}
+
+.mutuels {
+    background-image: url('./mutuels.png');
+}
+
+.knobbe {
+    background-image: url('./knobbe.png');
+}
+
+.wfs {
+    background-image: url('./wfs.png');
+}
+
+.wek {
+    background-image: url('./qa.png');
+}
+
+.sociedad {
+    background-image: url('./sociedad.png');
+}
+
+.title {
+    background-color: #30363f; /* Tomato color */
+    padding: 20px;
+    display: none; /* Initially hidden */
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    opacity: 0.8;
+  }
+
+.subtitle {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.beulah:hover .title,
+.winticket:hover .title,
+.cms:hover .title,
+.reporting:hover .title,
+.networking:hover .title,
+.nhcqualify:hover .title,
+.betpad:hover .title,
+.xlpharmacy:hover .title,
+.whchamp:hover .title,
+.tqha:hover .title,
+.kairos:hover .title,
+.ebet:hover .title,
+.bat:hover .title,
+.finger:hover .title,
+.sgr:hover .title,
+.hp:hover .title,
+.darkhorse:hover .title,
+.wlr:hover .title,
+.ghc:hover .title,
+.yonkers:hover .title,
+.raceuwin:hover .title,
+.mutuels:hover .title,
+.knobbe:hover .title,
+.wfs:hover .title,
+.wek:hover .title,
+.sociedad:hover .title {
+    display: block; /* Show and center the child on hover */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering technique */
+    cursor: pointer;
+    z-index: 999;
+}
+
+.connect {
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    background-color: rgb(34, 38, 47);
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.button-custom {
+    background-color: rgb(42, 42, 40);
+    width: 100%;
+    border-radius: 8px;
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.footer-bold {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.footer-normal {
+    font-size: 1.5rem;
+}
+
+.copy {
+    letter-spacing: 3px;
+}
+
+.mt-50 {
+    padding-top: 50px;
+}
+
+.mb-50 {
+    padding-bottom: 50px;
+}
+
+.footer-normal a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.footer-normal a:hover {
+    color: var(--active);
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    cursor: pointer;
+}
+
+.selectedProjects {
+    padding: 100px 100px 0;
+}
+
+.download {
+    width: 400px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+
