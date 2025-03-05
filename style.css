@@ -74,11 +74,6 @@ nav {
     margin-top: 30px;
 }
 
-.headerimg {
-    height: 90px;
-    object-fit: cover;
-}
-
 .biocontainer {
     font-size: 3.8rem;
     padding-left: 100px;
@@ -88,24 +83,18 @@ nav {
     margin-top: 30px;
 }
 
-.header-a {
-    font-size: 3.8rem;
-}
-
-.header-b {
-    font-size: 2rem;
-}
-
-.button-text {
-    font-size: 1rem;
-}
-
 .home-b {
     font-size: 1.8rem;
     line-height: 35px;
     font-weight: 200;
  }
 
+.social-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
 
 .social {
     width: 42px;
@@ -121,17 +110,94 @@ nav {
     filter: invert(1);
 }
 
-.social-container {
+.selectedProjects {
+    padding: 100px 100px 0;
+}
+
+.connect {
+    background-color: rgb(68, 68, 68);
+    color: white;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.footer {
+    background-color: rgb(34, 38, 47);
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .projects {
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
+}
+
+@media screen and (max-width: 599px) {
+    .projects {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .footer {
+        padding: 0px;
+    }
+    .frontimg {
+        padding-left: 50px;
+    }
+    body .connect {
+        padding:50px;
+    }
+    body .biocontainer {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 30px;
+    }
+    body .home-b {
+        margin-top: -10px;
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+    body .social-container {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    body .social {
+        width: 21px;
+        height: 21px;
+    }
+    body .selectedProjects {
+        padding: 50px 50px 0;
+    }
+    body .copy{
+        padding-bottom: 50px;
+    }
+}
+
+.headerimg {
+    height: 90px;
+    object-fit: cover;
+}
+
+.header-a {
+    font-size: 3.8rem;
+}
+
+.header-b {
+    font-size: 2rem;
+}
+
+.button-text {
+    font-size: 1rem;
 }
 
 .project-item {
@@ -404,27 +470,9 @@ flex: 0 0 50%;
     z-index: 999;
 }
 
-.connect {
-    background-color: rgb(68, 68, 68);
-    color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.footer {
-    background-color: rgb(34, 38, 47);
-    color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .button-custom {
     background-color: rgb(42, 42, 40);
-    width: 100%;
+    width: 50%;
     border-radius: 8px;
     opacity: 1;
     color: white;
@@ -469,12 +517,7 @@ flex: 0 0 50%;
     cursor: pointer;
 }
 
-.selectedProjects {
-    padding: 100px 100px 0;
-}
-
 .download {
-    width: 400px;
     margin-bottom: 100px;
     margin-left: 100px;
 }
