@@ -11,7 +11,7 @@ export default function Footer(){
 
     return <div className="container-fluid footer">
             <div className="row w-100 mb-50">
-                <div className="col-lg-6 footer-bold">
+                <div className="col-lg-6 footer-normal footer-bold">
                     Ariel Durán
                 </div>
                 <div className="col-lg-6 footer-normal text-end">
